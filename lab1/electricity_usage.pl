@@ -38,3 +38,15 @@ build_electricity(radiostation, 10).
 build_electricity(tvstation, 45).
 build_electricity(school, 8).
 build_electricity(college, 15).
+
+% наука
+build_electricity(research_hospital, 35).
+build_electricity(science_lab, 75).
+build_electricity(space_program, 100).
+
+% общественные службы
+build_electricity(hospital, 35).
+build_electricity(mall, 60).
+
+% войска
+build_electricity(drones, 50).

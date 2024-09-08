@@ -1,28 +1,5 @@
 :- consult('goods.pl').
 
-% Фракции
-fraction(religious).        % верующие
-fraction(military).         % военные
-fraction(capitalists).      % капиталисты
-fraction(communists).       % коммунисты
-fraction(ecologists).       % экологи
-fraction(industrialists).   % промышленники
-fraction(conservatives).    % консерваторы
-fraction(intellectuals).    % интеллигенция
-
-% Противоборствующие фракции
-opposing_franctions(religious, military).
-opposing_franctions(capitalists, communists).
-opposing_franctions(ecologists, industrialists).
-opposing_franctions(conservatives, intellectuals).
-
-% достаток граждан
-wealth(broke).        % разорившийся
-wealth(poor).         % бедный
-wealth(well-off).     % обеспеченный
-wealth(rich).         % богатый
-wealth(super_rich).   % несметно богатый
-
 % земельные ресурсы: плантации, лесозаготовки
 plantation(corn).       % кукуруза
 plantation(banana).     % банан
@@ -90,11 +67,11 @@ industry(clothes, fabric).  % одежда из ткани или кожи
 industry(clothes, leather).
 
 % электростанции (МВт, потребляемый ресурс)
-electricity(70, wind).       % Ветряк
-electricity(360, coal).      % ТЭС на угле
-electricity(400, oil).       % ТЭС на нефти
-electricity(500, sun).       % Солнечная ЭС
-electricity(800, uranium).   % АЭС
+electricity(wind).      % Ветряк
+electricity(coal).      % ТЭС на угле
+electricity(oil).       % ТЭС на нефти
+electricity(sun).       % Солнечная ЭС
+electricity(uranium).   % АЭС
 
 % жилые здания (название, вместимость, качество жилья)
 residential(shack, 2, 10).          % Лачуга
@@ -132,6 +109,7 @@ media(radiostation, 30).    % Радиостанция
 media(tvstation, 50).       % Телестанция
 
 % образование (уровень образования)
+education(uneducated).
 education(school).
 education(college).
 
