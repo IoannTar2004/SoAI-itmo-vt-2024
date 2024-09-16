@@ -34,8 +34,6 @@ build_electricity(casino, 25).
 build_electricity(gourmet, 15).
 
 % СМИ и образование
-build_electricity(radiostation, 10).
-build_electricity(tvstation, 45).
 build_electricity(school, 8).
 build_electricity(college, 15).
 

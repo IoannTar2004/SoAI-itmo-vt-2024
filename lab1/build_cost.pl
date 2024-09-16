@@ -4,8 +4,8 @@
 % цена за каждое здание
 % ресурсы
 build_price(plantation, 1500).
-build_price(lumberjack_camp, 750).
-build_price(coconut_combine, 800).
+build_price(wood, 750).
+build_price(coconut, 800).
 build_price(farm, 900).
 build_price(mine, 1200).
 
@@ -24,11 +24,12 @@ build_price(jewellery, 9500).
 build_price(juice, 12000).
 build_price(medicine, 28000).
 build_price(plastmass, 10500).
+build_price(planks, 4700).
+build_price(rum, 9600).
 build_price(steel, 9500).
 build_price(weapon, 18000).
 
 % электричество
-electricity(wind, 2500).       
 electricity(coal, 12000).      
 electricity(oil, 12000).      
 electricity(sun, 18000). 
@@ -83,11 +84,6 @@ build_price(space_program, 42000).
 % магазины
 build_price(grocery, 1200).
 build_price(mall, 7250).
-
-% религия
-build_price(chaptel, 1700).
-build_price(church, 4600).
-build_price(cathedral, 12600).
 
 % войска
 build_price(pirate, 4000).

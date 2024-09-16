@@ -9,11 +9,12 @@ price(coconut, 16.5).
 price(coffee, 38).
 price(corn, 20).
 price(cotton, 13.5).
+price(fish_meat, 20).
 price(gold, 90).
 price(skin, 7.5).
 price(iron, 25).
-price(leather, 54).
-price(wood, 15).
+price(natural_leather, 54).
+price(industrial_leather, 54).
 price(meat, 23).
 price(milk, 22).
 price(nickel, 42).
@@ -24,6 +25,7 @@ price(shellfish, 28).
 price(sugar, 25).
 price(tobacco, 21.5).
 price(uranium, 120).
+price(wood, 15).
 price(wool, 23.5).
 
 % Обработанные товары
@@ -40,6 +42,7 @@ price(furniture, 124).
 price(jewellery, 165).
 price(juice, 54).
 price(medicine, 109).
+price(planks, 21).
 price(plastmass, 26).
 price(rum, 92).
 price(steel, 52).

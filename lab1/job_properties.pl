@@ -6,8 +6,8 @@
 
 % ресурсы
 job(plantation, poor, uneducated, 8, 40).
-job(lumberjack_camp, poor, uneducated, 6, 40).
-job(coconut_combine, poor, uneducated, 6, 40).
+job(wood, poor, uneducated, 6, 40).
+job(coconut, poor, uneducated, 6, 40).
 job(farm, poor, uneducated, 4, 40).
 job(mine, poor, uneducated, 5, 40).
 
@@ -26,6 +26,8 @@ job(jewellery, well-off, school, 4, 70).
 job(juice, well-off, uneducated, 5, 55).
 job(medicine, well-off, school, 6, 70).
 job(plastmass, well-off, uneducated, 5, 55).
+job(planks, poor, uneducated, 4, 45).
+job(rum, well-off, uneducated, 4, 60).
 job(steel, well-off, school, 8, 55).
 job(weapon, well-off, uneducated, 8, 60).
 
@@ -72,11 +74,6 @@ job(space_program, super_rich, college, 10, 80).
 job(grocery, poor, uneducated, 2, 55).
 job(mall, poor, uneducated, 8, 55).
 
-% религия
-job(chaptel, poor, school, 2, 55).
-job(church, well-off, school, 3, 65).
-job(cathedral, rich, college, 4, 80).
-
 % войска
 job(pirate, well-off, uneducated, 4, 50).
 job(fort, poor, school, 8, 35).
@@ -84,3 +81,9 @@ job(barracks, well-off, school, 8, 40).
 job(armybase, well-off, school, 2, 65).
 job(aircraft_carrier, rich, school, 4, 80).
 job(drons, rich, school, 4, 75).
+
+get_job(Item, Job) :-
+    plantation(Item) -> Job=plantation;
+    farm(_, Item) -> Job=farm;
+    mine(Item) -> Job=mine;
+    Job=Item.

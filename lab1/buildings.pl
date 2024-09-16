@@ -18,7 +18,7 @@ coconut_combine(coconut).   % кокос
 farm(bull, skin). farm(bull, meat).     % бык - шкуры, мясо
 farm(pig, meat).    % свинья - мясо
 farm(sheep, wool). farm(sheep, milk).   % овца - шерсть, молоко
-farm(crocodile, leather).   % крокодил - кожа
+farm(crocodile, natural_leather).   % крокодил - кожа
 farm(fish, fish_meat). farm(fish, shellfish).  % рыба - рыба, морепродукты
 
 % шахты
@@ -32,9 +32,10 @@ mine(oil).      % нефть
 
 % заводы (продукция, материалы...)
 industry(planks, wood).     % доски из дерева
+industry(industry_leather, skin) % кожа из шкур
 industry(rum, sugar).       % ром из сахара
 industry(leather, skin).    % кожа из шкур
-industry(cans, fish).       % консервы из рыбы или ананаса или мяса или какао
+industry(cans, fish_meat).       % консервы из рыбы или ананаса или мяса или какао
 industry(cans, pineapple).
 industry(cans, meat).
 industry(cans, cacao).
@@ -67,10 +68,8 @@ industry(clothes, fabric).  % одежда из ткани или кожи
 industry(clothes, leather).
 
 % электростанции (МВт, потребляемый ресурс)
-electricity(wind).      % Ветряк
 electricity(coal).      % ТЭС на угле
 electricity(oil).       % ТЭС на нефти
-electricity(sun).       % Солнечная ЭС
 electricity(uranium).   % АЭС
 
 % жилые здания (название, вместимость, качество жилья)
@@ -82,8 +81,8 @@ residential(tenement, 32, 40).      % Многокватрирный дом
 residential(countryhouse, 4, 48).   % Загородный дом
 residential(apartments, 20, 52).    % Квартиры
 residential(house, 6, 64).          % Дом
-residential(mansion, 4, 68).        % Поместье
-residential(modern_apartment, 4, 80). % Многоквартирная высотка
+residential(modern_apartment, 28, 80). % Многоквартирная высотка
+residential(mansion, 4, 85).        % Поместье
 residential(modern_mansion, 4, 90).   % Современный особняк
 residential(highest_modern_mansion, 4, 105).    % Современный особняк высочайшего класса
 
@@ -127,21 +126,6 @@ science(space_program, 4).          % космическая программа
 % магазины (название, даваемый уровень удовлетворения пищей, макс посетителей)
 store(grocery, 45, 16).     % продуктовый магазин
 store(mall, 50, 40).        % торговый центр
-
-% религия (название, даваемый уровень веры)
-relig(chaptel, 45).         % Часовня
-relig(church, 60).          % Церковь
-relig(cathedral, 80).       % Собор
-
-% рейды: пираты (украденные ресурсы\3, количество каждого ресурса соответственно)
-pirate(banana, skin, iron, 2000, 3200, 1200).
-pirate(coconut, sugar, wool, 1200, 1800, 1000).
-pirate(coffee, corn, gold, 1000, 1600, 200).
-pirate(coal, wood, pineapple, 1200, 1800, 2000).
-pirate(fish, nickel, tobacco, 1000, 550, 1800).
-pirate(aluminum, cacao, shellfish, 700, 1000, 1200).
-pirate(milk, rubber, uranium, 1100, 1600, 105).
-pirate(cotton, meat, oil, 1500, 1600, 500).
 
 % военные здания (названия, сила одного человека)
 military(palace, 1).            % Дворец
