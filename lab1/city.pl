@@ -31,7 +31,7 @@ prod_per_day(Build, Count) :-
 theory_prod_per_day(Build, Workers, Count) :-
     (plantation(Build); farm(_, Build); mine(Build); industry(Build, _); industry(Build, _, _)),
     job(Build, _, _, N, _), !, prod_count(Build, Prod),
-    Count is Prod * (Workers / N).
+    Count is Prod * Workers.
 
 % расчитывает какую продукция и сколько требуется продать, чтобы получить Profit, но при этом, продав товаров
 % не больше, чем Max
@@ -59,6 +59,7 @@ city_development(Purpose, Item, LHouse) :-
     price(Item, Price), get_job(Item, Job),
     format('Resource: ~w\n\tRequirements\n', Item),
     prod_count(Item, N), job(Job, Wealth, Education, Max, _), build_price(Job, BuildPrice),
+
     Workers is ceil(Purpose / (Price * N - BuildPrice / (100 * Max))),
     BuildCount is ceil(Workers / Max),
     format('Workers: ~d\n', Workers),

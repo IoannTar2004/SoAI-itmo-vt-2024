@@ -20,6 +20,7 @@ build_price(clothes, 18000).
 build_price(electronics, 25000).
 build_price(fabric, 10500).
 build_price(furniture, 10000).
+build_price(industry_leather, 4800)
 build_price(jewellery, 9500).
 build_price(juice, 12000).
 build_price(medicine, 28000).
@@ -86,9 +87,8 @@ build_price(grocery, 1200).
 build_price(mall, 7250).
 
 % войска
-build_price(pirate, 4000).
 build_price(fort, 4000).
 build_price(barracks, 6000).
-build_price(armybase, 15000).
+build_price(armybase, 20000).
 build_price(aircraft_carrier, 35000).
 build_price(drons, 12000).

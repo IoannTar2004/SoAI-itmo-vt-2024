@@ -21,13 +21,14 @@ job(cigars, well-off, school, 5, 65).
 job(clothes, well-off, uneducated, 4, 60).
 job(electronics, well-off, school, 8, 50).
 job(fabric, well-off, uneducated, 10, 55).
+job(industry_leather, poor, uneducated, 8, 50).
 job(furniture, well-off, uneducated, 5, 60).
 job(jewellery, well-off, school, 4, 70).
 job(juice, well-off, uneducated, 5, 55).
 job(medicine, well-off, school, 6, 70).
-job(plastmass, well-off, uneducated, 5, 55).
+job(plastmass, well-off, school, 5, 55).
 job(planks, poor, uneducated, 4, 45).
-job(rum, well-off, uneducated, 4, 60).
+job(rum, poor, uneducated, 4, 60).
 job(steel, well-off, school, 8, 55).
 job(weapon, well-off, uneducated, 8, 60).
 
@@ -49,8 +50,8 @@ job(stadium, poor, uneducated, 50).
 job(theater, well-off, school, 6, 50).
 job(cabaret, well-off, school, 4, 50).
 job(casino, well-off, school, 6, 60).
-job(opera, well-off, school, 8, 60).
-job(gourmet, well-off, school, 6, 65).
+job(opera, rich, school, 8, 60).
+job(gourmet, rich, school, 6, 65).
 job(yacht, poor, uneducated, 4, 75).
 
 % СМИ и образование
@@ -61,7 +62,7 @@ job(school, well-off, school, 4, 50).
 job(college, rich, college, 3, 70).
 
 % здравоохранение
-job(clinic, well-off, college, 2, 70).
+job(clinic, well-off, college, 2, 60).
 job(hospital, rich, college, 4, 65).
 job(research_hospital, rich, college, 4, 65).
 
@@ -75,11 +76,10 @@ job(grocery, poor, uneducated, 2, 55).
 job(mall, poor, uneducated, 8, 55).
 
 % войска
-job(pirate, well-off, uneducated, 4, 50).
-job(fort, poor, school, 8, 35).
+job(fort, poor, uneducated, 8, 35).
 job(barracks, well-off, school, 8, 40).
 job(armybase, well-off, school, 2, 65).
-job(aircraft_carrier, rich, school, 4, 80).
+job(aircraft_carrier, rich, college, 3, 80).
 job(drons, rich, school, 4, 75).
 
 get_job(Item, Job) :-

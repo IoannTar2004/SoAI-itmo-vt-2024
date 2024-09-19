@@ -34,7 +34,6 @@ mine(oil).      % нефть
 industry(planks, wood).     % доски из дерева
 industry(industry_leather, skin) % кожа из шкур
 industry(rum, sugar).       % ром из сахара
-industry(leather, skin).    % кожа из шкур
 industry(cans, fish_meat).       % консервы из рыбы или ананаса или мяса или какао
 industry(cans, pineapple).
 industry(cans, meat).
@@ -65,11 +64,13 @@ industry(juice, coconut).
 industry(electronics, plastmass, gold). % электроника из пластмасс и золота
 
 industry(clothes, fabric).  % одежда из ткани или кожи
-industry(clothes, leather).
+industry(clothes, natural_leather).
+industry(clothes, industry_leather).
 
 % электростанции (МВт, потребляемый ресурс)
 electricity(coal).      % ТЭС на угле
 electricity(oil).       % ТЭС на нефти
+electricity(sun).       % Солнечная ЭС
 electricity(uranium).   % АЭС
 
 % жилые здания (название, вместимость, качество жилья)
@@ -107,8 +108,8 @@ media(newspaper, 20).       % Газета
 media(radiostation, 30).    % Радиостанция
 media(tvstation, 50).       % Телестанция
 
-% образование (уровень образования)
-education(uneducated).
+% образование (уровень образования).
+education(uneducated).      % не является зданием. Просто факт об отсутствии образования
 education(school).
 education(college).
 
@@ -128,9 +129,8 @@ store(grocery, 45, 16).     % продуктовый магазин
 store(mall, 50, 40).        % торговый центр
 
 % военные здания (названия, сила одного человека)
-military(palace, 1).            % Дворец
 military(fort, 1).              % Форт
 military(barracks, 2).          % Казармы
-military(armybase, 5).          % Военная база
-military(aircraft_carrier, 6).  % Авианосец
-military(drons, 3).             % Эскадра дронов
+military(armybase, 10).          % Военная база
+military(aircraft_carrier, 8).  % Авианосец
+military(drons, 5).             % Эскадра дронов

@@ -38,14 +38,17 @@ prod_count(cans, 0.8).
 prod_count(steel, 2).
 prod_count(boat, 1).
 prod_count(fabric, 0.7).
+prod_count(furniture, 0.7).
 prod_count(industrial_leather, 0.7).
 prod_count(weapon, 0.7).
 prod_count(cheese, 0.75).
 prod_count(cigars, 0.55).
 prod_count(car, 0.8).
+prod_count(plantmass, 1).
 prod_count(chocolate, 0.5).
 prod_count(medicine, 1).
 prod_count(juice, 0.84).
+prod_count(jewellery, 0.5).
 prod_count(electronics, 0.8).
 prod_count(clothes, 0.9).
 
