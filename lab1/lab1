@@ -1,0 +1,4856 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/iwant/ontologies/2024/8/lab1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/iwant/ontologies/2024/8/lab1">
+    <Prefix name="" IRI="http://www.semanticweb.org/iwant/ontologies/2024/8/lab1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Военные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Гражданин"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Достаток"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Другие"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Живность"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Животные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Жилые"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Здания"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Здравоохранение"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Земельные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ископаемые"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Магазины"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Население"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Наука"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Обработанные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Образование"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Плантация"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Промышленные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Рабочие"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Развлечения"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ресурсные"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Роскошные_развлечения"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#СМИ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Товары"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Уровень_образования"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ферма"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Шахта"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Электростанции"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#выращивать"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#давать"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#давать_образование"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#добывать"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#жить_в"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_достаток"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_образование"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#образование_рабочих"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#обслуживать_с_достатком"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#производить"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#производство"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#работать_на"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#содержать_рабочих"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#вмещать_жителей"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#давать_уровень_удовлетворения_пищей"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_качество_работы"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#потреблять_энергию"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#производит_электричество_один_человек"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#производить_очков_знаний"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#производить_электричество"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#работников_вмещать"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HQ_Современный_особняк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Авианосец"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Автомобили"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Алюминий"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ананас"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Атомная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Банан"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Барак"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Бедный"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Без_образования"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Без_работы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Библиотека"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Богатый"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Больница"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Бык"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Верфь"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Военная_база"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Высшее"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Газета"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Дерево"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Дом"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Дом_моды"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Доски"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Дубильня"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Железо"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Завод_электроники"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Загородный_дом"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Золото"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кабаре"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Казармы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Казино"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Какао"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Каучук"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Квартиры"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Клиника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кожа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кокос"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Колледж"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Коммуналка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Консервный_завод"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Консервы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Космическая_программа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кофе"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Крокодил"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кукуруза"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лачуга"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лекарства"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лесопилка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лодки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мебель"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Многоквартирная_высотка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Многоквартирный_дом"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Молоко"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Морепродукты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мясо"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Несметно_богатый"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Нефть"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Никель"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ночлежка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Овца"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Одежда"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Опера"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Оружие"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пластмассы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Поместье"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Радиостанция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Разорившийся"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ресторан"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ром"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рыба"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рыба-товар"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сахар"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Свинья"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сигары"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Современный_особняк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Солнечная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Спиртзавод"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Среднее"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Стадион"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сталь"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сыр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сыроварня"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Табак"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Таверна"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Театр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Телестанция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ткань"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Торговый_центр"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Уголь"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Украшения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Уран"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Форт"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хлопок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Цирк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Чел"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шерсть"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Школа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шкуры"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шоколад"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электроника"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Яхт-клуб"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Ананас)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Военные"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Достаток"/>
+        <Class IRI="#Население"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Другие"/>
+        <Class IRI="#Ресурсные"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Живность"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Животные"/>
+        <Class IRI="#Товары"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Жилые"/>
+        <Class IRI="#Здания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Здравоохранение"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Земельные"/>
+        <Class IRI="#Товары"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ископаемые"/>
+        <Class IRI="#Товары"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Магазины"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Наука"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Обработанные"/>
+        <Class IRI="#Товары"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Образование"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Плантация"/>
+        <Class IRI="#Ресурсные"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Промышленные"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Рабочие"/>
+        <Class IRI="#Здания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Развлечения"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ресурсные"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Роскошные_развлечения"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#СМИ"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Уровень_образования"/>
+        <Class IRI="#Население"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ферма"/>
+        <Class IRI="#Ресурсные"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Шахта"/>
+        <Class IRI="#Ресурсные"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Электростанции"/>
+        <Class IRI="#Рабочие"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#HQ_Современный_особняк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Военные"/>
+        <NamedIndividual IRI="#Авианосец"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Автомобили"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Алюминий"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Ананас"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электростанции"/>
+        <NamedIndividual IRI="#Атомная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Банан"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Барак"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Достаток"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Уровень_образования"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Рабочие"/>
+        <NamedIndividual IRI="#Без_работы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Наука"/>
+        <NamedIndividual IRI="#Библиотека"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Достаток"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Здравоохранение"/>
+        <NamedIndividual IRI="#Больница"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Живность"/>
+        <NamedIndividual IRI="#Бык"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Верфь"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Развлечения"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Военные"/>
+        <NamedIndividual IRI="#Военная_база"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Уровень_образования"/>
+        <NamedIndividual IRI="#Высшее"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СМИ"/>
+        <NamedIndividual IRI="#Газета"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Дерево"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Дом"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Доски"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Дубильня"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Железо"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Загородный_дом"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Золото"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Здравоохранение"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Роскошные_развлечения"/>
+        <NamedIndividual IRI="#Кабаре"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Военные"/>
+        <NamedIndividual IRI="#Казармы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Роскошные_развлечения"/>
+        <NamedIndividual IRI="#Казино"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Какао"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Каучук"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Квартиры"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Здравоохранение"/>
+        <NamedIndividual IRI="#Клиника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Кожа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Кокос"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Другие"/>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Образование"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Коммуналка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Консервы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Наука"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Кофе"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Живность"/>
+        <NamedIndividual IRI="#Крокодил"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Кукуруза"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Другие"/>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Лачуга"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Лекарства"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Лодки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Мебель"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Многоквартирная_высотка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Многоквартирный_дом"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Животные"/>
+        <NamedIndividual IRI="#Молоко"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Животные"/>
+        <NamedIndividual IRI="#Морепродукты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Животные"/>
+        <NamedIndividual IRI="#Мясо"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Наука"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Достаток"/>
+        <NamedIndividual IRI="#Несметно_богатый"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Нефть"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Никель"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Ночлежка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Достаток"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Живность"/>
+        <NamedIndividual IRI="#Овца"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Одежда"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Роскошные_развлечения"/>
+        <NamedIndividual IRI="#Опера"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Оружие"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Развлечения"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Пластмассы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Поместье"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Магазины"/>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СМИ"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Достаток"/>
+        <NamedIndividual IRI="#Разорившийся"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Развлечения"/>
+        <NamedIndividual IRI="#Ресторан"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Роскошные_развлечения"/>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Ром"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Живность"/>
+        <NamedIndividual IRI="#Рыба"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Животные"/>
+        <NamedIndividual IRI="#Рыба-товар"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Сахар"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Живность"/>
+        <NamedIndividual IRI="#Свинья"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Сигары"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Жилые"/>
+        <NamedIndividual IRI="#Современный_особняк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Сок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электростанции"/>
+        <NamedIndividual IRI="#Солнечная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Уровень_образования"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Развлечения"/>
+        <NamedIndividual IRI="#Стадион"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Сталь"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Сыр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Табак"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Развлечения"/>
+        <NamedIndividual IRI="#Таверна"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Роскошные_развлечения"/>
+        <NamedIndividual IRI="#Театр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СМИ"/>
+        <NamedIndividual IRI="#Телестанция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Ткань"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Магазины"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Уголь"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Украшения"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ископаемые"/>
+        <NamedIndividual IRI="#Уран"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Военные"/>
+        <NamedIndividual IRI="#Форт"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Земельные"/>
+        <NamedIndividual IRI="#Хлопок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Развлечения"/>
+        <NamedIndividual IRI="#Цирк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Гражданин"/>
+        <NamedIndividual IRI="#Чел"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Животные"/>
+        <NamedIndividual IRI="#Шерсть"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Образование"/>
+        <NamedIndividual IRI="#Школа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Животные"/>
+        <NamedIndividual IRI="#Шкуры"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Шоколад"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Обработанные"/>
+        <NamedIndividual IRI="#Электроника"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Военные"/>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Промышленные"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Роскошные_развлечения"/>
+        <NamedIndividual IRI="#Яхт-клуб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Ананас)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Плантация"/>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электростанции"/>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Электростанции"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ферма"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ферма"/>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ферма"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ферма"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ферма"/>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шахта"/>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Верфь"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#HQ_Современный_особняк"/>
+        <NamedIndividual IRI="#Несметно_богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Авианосец"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Авианосец"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <NamedIndividual IRI="#Каучук"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <NamedIndividual IRI="#Сталь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <NamedIndividual IRI="#Автомобили"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Атомная"/>
+        <NamedIndividual IRI="#Несметно_богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Атомная"/>
+        <NamedIndividual IRI="#Уран"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Атомная"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Барак"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Бедный"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Библиотека"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Библиотека"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Больница"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Больница"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Бык"/>
+        <NamedIndividual IRI="#Мясо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Бык"/>
+        <NamedIndividual IRI="#Шкуры"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <NamedIndividual IRI="#Алюминий"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <NamedIndividual IRI="#Доски"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <NamedIndividual IRI="#Сталь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <NamedIndividual IRI="#Лодки"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Военная_база"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Военная_база"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Газета"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Газета"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Дом"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <NamedIndividual IRI="#Кожа"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <NamedIndividual IRI="#Ткань"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <NamedIndividual IRI="#Одежда"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Дубильня"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Дубильня"/>
+        <NamedIndividual IRI="#Шкуры"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Дубильня"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Дубильня"/>
+        <NamedIndividual IRI="#Кожа"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <NamedIndividual IRI="#Нефть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <NamedIndividual IRI="#Пластмассы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <NamedIndividual IRI="#Золото"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <NamedIndividual IRI="#Пластмассы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <NamedIndividual IRI="#Электроника"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Загородный_дом"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Кабаре"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Кабаре"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Казармы"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Казармы"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Казино"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Казино"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Квартиры"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Клиника"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Клиника"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+        <NamedIndividual IRI="#Кокос"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать_образование"/>
+        <NamedIndividual IRI="#Колледж"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Колледж"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Колледж"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Коммуналка"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <NamedIndividual IRI="#Ананас"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <NamedIndividual IRI="#Кофе"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <NamedIndividual IRI="#Рыба-товар"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <NamedIndividual IRI="#Консервы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+        <NamedIndividual IRI="#Несметно_богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Крокодил"/>
+        <NamedIndividual IRI="#Кожа"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+        <NamedIndividual IRI="#Дерево"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Лачуга"/>
+        <NamedIndividual IRI="#Разорившийся"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+        <NamedIndividual IRI="#Дерево"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+        <NamedIndividual IRI="#Доски"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <NamedIndividual IRI="#Доски"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <NamedIndividual IRI="#Пластмассы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <NamedIndividual IRI="#Мебель"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Многоквартирная_высотка"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Многоквартирный_дом"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+        <NamedIndividual IRI="#Колледж"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+        <NamedIndividual IRI="#Нефть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Ночлежка"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+        <NamedIndividual IRI="#Оружие"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Овца"/>
+        <NamedIndividual IRI="#Молоко"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Овца"/>
+        <NamedIndividual IRI="#Шерсть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Опера"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Опера"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+        <NamedIndividual IRI="#Никель"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+        <NamedIndividual IRI="#Сталь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Поместье"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ресторан"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ресторан"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Рыба"/>
+        <NamedIndividual IRI="#Рыба-товар"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать"/>
+        <NamedIndividual IRI="#Свинья"/>
+        <NamedIndividual IRI="#Мясо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+        <NamedIndividual IRI="#Табак"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+        <NamedIndividual IRI="#Сигары"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <NamedIndividual IRI="#Современный_особняк"/>
+        <NamedIndividual IRI="#Богатый"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Солнечная"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Солнечная"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+        <NamedIndividual IRI="#Сахар"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+        <NamedIndividual IRI="#Ром"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Стадион"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Стадион"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <NamedIndividual IRI="#Железо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <NamedIndividual IRI="#Уголь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <NamedIndividual IRI="#Сталь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+        <NamedIndividual IRI="#Молоко"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+        <NamedIndividual IRI="#Сыр"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Таверна"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Таверна"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Театр"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Театр"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <NamedIndividual IRI="#Хлопок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <NamedIndividual IRI="#Шерсть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <NamedIndividual IRI="#Ткань"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Телестанция"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Телестанция"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <NamedIndividual IRI="#Ананас"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <NamedIndividual IRI="#Банан"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <NamedIndividual IRI="#Кокос"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <NamedIndividual IRI="#Сок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <NamedIndividual IRI="#Нефть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <NamedIndividual IRI="#Лекарства"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Форт"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Форт"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Цирк"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Цирк"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#жить_в"/>
+        <NamedIndividual IRI="#Чел"/>
+        <NamedIndividual IRI="#Барак"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#работать_на"/>
+        <NamedIndividual IRI="#Чел"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#давать_образование"/>
+        <NamedIndividual IRI="#Школа"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Школа"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Школа"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <NamedIndividual IRI="#Какао"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <NamedIndividual IRI="#Сахар"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <NamedIndividual IRI="#Шоколад"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+        <NamedIndividual IRI="#Золото"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+        <NamedIndividual IRI="#Украшения"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Яхт-клуб"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Яхт-клуб"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Ананас)"/>
+        <NamedIndividual IRI="#Ананас"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Ананас)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Ананас)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+        <NamedIndividual IRI="#Банан"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+        <NamedIndividual IRI="#Какао"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+        <NamedIndividual IRI="#Каучук"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+        <NamedIndividual IRI="#Кофе"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+        <NamedIndividual IRI="#Кукуруза"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+        <NamedIndividual IRI="#Сахар"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+        <NamedIndividual IRI="#Табак"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выращивать"/>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+        <NamedIndividual IRI="#Хлопок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+        <NamedIndividual IRI="#Нефть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+        <NamedIndividual IRI="#Обеспеченный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+        <NamedIndividual IRI="#Уголь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+        <NamedIndividual IRI="#Среднее"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+        <NamedIndividual IRI="#Мясо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+        <NamedIndividual IRI="#Шкуры"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+        <NamedIndividual IRI="#Кожа"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+        <NamedIndividual IRI="#Молоко"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+        <NamedIndividual IRI="#Шерсть"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+        <NamedIndividual IRI="#Морепродукты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+        <NamedIndividual IRI="#Рыба-товар"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#производить"/>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+        <NamedIndividual IRI="#Мясо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+        <NamedIndividual IRI="#Алюминий"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+        <NamedIndividual IRI="#Железо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+        <NamedIndividual IRI="#Золото"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+        <NamedIndividual IRI="#Никель"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+        <NamedIndividual IRI="#Уголь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#добывать"/>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+        <NamedIndividual IRI="#Уран"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+        <NamedIndividual IRI="#Бедный"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+        <NamedIndividual IRI="#Без_образования"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#HQ_Современный_особняк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#HQ_Современный_особняк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Авианосец"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <NamedIndividual IRI="#Авианосец"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Авианосец"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Автомобили"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">280.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Автомобили"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Автомобильный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Алюминий"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">26.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Алюминий"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Ананас"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Ананас"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Атомная"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Банан"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">17.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Банан"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Барак"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Барак"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Библиотека"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Библиотека"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <NamedIndividual IRI="#Библиотека"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+        <NamedIndividual IRI="#Больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Верфь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Весёлая_пристань"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Военная_база"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <NamedIndividual IRI="#Военная_база"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Военная_база"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+        <NamedIndividual IRI="#Газета"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Газета"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Газета"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Дерево"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Дерево"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Дом"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Дом"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Дом_моды"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Доски"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">21.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Доски"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Дубильня"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Дубильня"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Железо"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Железо"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Завод_пластмасс"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Завод_электроники"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Загородный_дом"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Загородный_дом"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">48</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Золото"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">90.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Золото"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <NamedIndividual IRI="#Исследовательская_больница"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Кабаре"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Кабаре"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Казармы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <NamedIndividual IRI="#Казармы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Казармы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Казино"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Казино"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Казино"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Какао"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">36.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Какао"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.313</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Каучук"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">32.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Каучук"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Квартиры"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Квартиры"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+        <NamedIndividual IRI="#Клиника"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Клиника"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Клиника"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Кожа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">54.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Кожа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Кокос"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">16.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Кокос"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Кокосовый_комбайн"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Колледж"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Колледж"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Колледж"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Коммуналка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Коммуналка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Консервный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Консервы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">48.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Консервы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">42000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <NamedIndividual IRI="#Космическая_программа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Кофе"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">38.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Кофе"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.375</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Кукуруза"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Кукуруза"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Лагерь_лесорубов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">750</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Лачуга"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Лачуга"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Лекарства"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">109.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Лекарства"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Лесопилка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Лодки"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">115.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Лодки"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Мебель"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">124.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Мебель"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Мебельная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Многоквартирная_высотка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Многоквартирная_высотка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Многоквартирный_дом"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Многоквартирный_дом"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Молоко"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">22.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Молоко"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Морепродукты"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Морепродукты"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Мясо"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Мясо"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <NamedIndividual IRI="#Научная_лаборатория"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Нефть"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">74.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Нефть"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Нефтяная_скважина"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Никель"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">42.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Никель"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Ночлежка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Ночлежка"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Одежда"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">132.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Одежда"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Опера"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Опера"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9880</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Оружейный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Оружие"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Оружие"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Парк_развлечений"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Пластмассы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">26.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Пластмассы"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Поместье"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Поместье"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_удовлетворения_пищей"/>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Продуктовый_магазин"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Радиостанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <NamedIndividual IRI="#Ресторан"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ресторан"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ресторан"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Ресторан_деликатесов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Ром"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">92.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Ром"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Рыба-товар"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Рыба-товар"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Сахар"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Сахар"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Сигарная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Сигары"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">115.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Сигары"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <NamedIndividual IRI="#Современный_особняк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <NamedIndividual IRI="#Современный_особняк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Сок"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">54.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Сок"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Солнечная"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Солнечная"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Спиртзавод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <NamedIndividual IRI="#Стадион"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Стадион"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Стадион"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">21000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Стадион"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Сталелитейный_завод"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Сталь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">52.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Сталь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Сыр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">60.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Сыр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Сыроварня"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Табак"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">21.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Табак"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <NamedIndividual IRI="#Таверна"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Таверна"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Таверна"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Театр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Театр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Текстильная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+        <NamedIndividual IRI="#Телестанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Телестанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Телестанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Телестанция"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Ткань"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">52.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Ткань"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#давать_уровень_удовлетворения_пищей"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Торговый_центр"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Уголь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Уголь"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Украшения"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">165.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Украшения"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Уран"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">120.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Уран"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Фабрика_сока"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Фармацевтическая_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Форт"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <NamedIndividual IRI="#Форт"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Форт"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Хлопок"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Хлопок"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.313</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <NamedIndividual IRI="#Цирк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Цирк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Цирк"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Шерсть"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Шерсть"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Школа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Школа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <NamedIndividual IRI="#Школа"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Шкуры"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Шкуры"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Шоколад"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">76.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Шоколад"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шоколадная_фабрика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <NamedIndividual IRI="#Электроника"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">98.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <NamedIndividual IRI="#Электроника"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Эскадра_дронов"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ювелирная_мастерская"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Яхт-клуб"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Яхт-клуб"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Ананас)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Банан)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Какао)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Каучук)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Кофе)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Кукуруза)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Сахар)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Табак)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Плантация_(Хлопок)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Тепловая_(на_нефти)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Тепловая_(на_угле)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ферма_(Бык)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ферма_(Крокодил)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ферма_(Овца)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ферма_(Рыба)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Ферма_(Свинья)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шахта_(Алюминий)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шахта_(Железо)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шахта_(Золото)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шахта_(Никель)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шахта_(Уголь)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <NamedIndividual IRI="#Шахта_(Уран)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1200</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#выращивать"/>
+        <ObjectProperty IRI="#производство"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#давать"/>
+        <ObjectProperty IRI="#производство"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#давать_образование"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#добывать"/>
+        <ObjectProperty IRI="#производство"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#жить_в"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_достаток"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_образование"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <ObjectProperty IRI="#производство"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#обслуживать_с_достатком"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#производить"/>
+        <ObjectProperty IRI="#производство"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#производство"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#работать_на"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#содержать_рабочих"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#работать_на"/>
+        <ObjectProperty IRI="#содержать_рабочих"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#выращивать"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#давать_образование"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#добывать"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#жить_в"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_достаток"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_образование"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#работать_на"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_достаток"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#работать_на"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#обслуживать_с_достатком"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#выращивать"/>
+        <Class IRI="#Другие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#выращивать"/>
+        <Class IRI="#Плантация"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#давать"/>
+        <Class IRI="#Живность"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#давать_образование"/>
+        <Class IRI="#Образование"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#добывать"/>
+        <Class IRI="#Шахта"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <Class IRI="#Жилые"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <Class IRI="#Рабочие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#жить_в"/>
+        <Class IRI="#Гражданин"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_достаток"/>
+        <Class IRI="#Гражданин"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_образование"/>
+        <Class IRI="#Гражданин"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <Class IRI="#Промышленные"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <Class IRI="#Электростанции"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <Class IRI="#Рабочие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#обслуживать_с_достатком"/>
+        <Class IRI="#Развлечения"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#обслуживать_с_достатком"/>
+        <Class IRI="#Роскошные_развлечения"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#производить"/>
+        <Class IRI="#Промышленные"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#производить"/>
+        <Class IRI="#Ферма"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#работать_на"/>
+        <Class IRI="#Гражданин"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#содержать_рабочих"/>
+        <Class IRI="#Рабочие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#выращивать"/>
+        <Class IRI="#Земельные"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#давать"/>
+        <Class IRI="#Животные"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#давать_образование"/>
+        <Class IRI="#Уровень_образования"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#добывать"/>
+        <Class IRI="#Ископаемые"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#достаток_жильцов"/>
+        <Class IRI="#Достаток"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#достаток_рабочих"/>
+        <Class IRI="#Достаток"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#жить_в"/>
+        <Class IRI="#Жилые"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_достаток"/>
+        <Class IRI="#Достаток"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_образование"/>
+        <Class IRI="#Уровень_образования"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <Class IRI="#Товары"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#образование_рабочих"/>
+        <Class IRI="#Уровень_образования"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#обслуживать_с_достатком"/>
+        <Class IRI="#Достаток"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#производить"/>
+        <Class IRI="#Животные"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#производить"/>
+        <Class IRI="#Обработанные"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#работать_на"/>
+        <Class IRI="#Рабочие"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#содержать_рабочих"/>
+        <Class IRI="#Гражданин"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#выращивать"/>
+        <ObjectProperty IRI="#давать"/>
+        <ObjectProperty IRI="#добывать"/>
+        <ObjectProperty IRI="#использовать_сырьё"/>
+        <ObjectProperty IRI="#производить"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#давать_уровень_удовлетворения_пищей"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#производить_электричество"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#работников_вмещать"/>
+        <DataProperty IRI="#иметь_характеристику"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <Class IRI="#Жилые"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+        <Class IRI="#Здравоохранение"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+        <Class IRI="#СМИ"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#давать_уровень_удовлетворения_пищей"/>
+        <Class IRI="#Магазины"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <Class IRI="#Жилые"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <Class IRI="#Развлечения"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <Class IRI="#Роскошные_развлечения"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <Class IRI="#Рабочие"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <Class IRI="#Военные"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <Class IRI="#Здания"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <Class IRI="#Товары"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_характеристику"/>
+        <Class IRI="#Здания"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <Class IRI="#Здания"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <Class IRI="#Товары"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#производит_электричество_один_человек"/>
+        <Class IRI="#Электростанции"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <Class IRI="#Наука"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#производить_электричество"/>
+        <Class IRI="#Электростанции"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#работников_вмещать"/>
+        <Class IRI="#Рабочие"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#вмещать_жителей"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#давать_уровень_здоровья"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#давать_уровень_свободы"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#давать_уровень_удовлетворения_пищей"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_качество_жилья"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_качество_обслуживания"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_качество_работы"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_силу_одного_солдата"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_стоимость_здания"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_стоимость_одного_товара"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_характеристику"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#потреблять_энергию"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#производит_товар_один_человек"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#производит_электричество_один_человек"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#производить_очков_знаний"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#производить_электричество"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#работников_вмещать"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Бедный &gt; Обеспеченный &gt; Богатый &gt; Несметно_богатый</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Гражданин"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#работать_на"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Без_работы"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Жилые"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#достаток_жильцов"/>
+                <Variable IRI="/r"/>
+                <NamedIndividual IRI="#Бедный"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#жить_в"/>
+                <Variable IRI="/c"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Бедный"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Обеспеченный"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Богатый"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Несметно_богатый"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Богатый &gt; Несметно_богатый</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Гражданин"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#работать_на"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Без_работы"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Жилые"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#достаток_жильцов"/>
+                <Variable IRI="/r"/>
+                <NamedIndividual IRI="#Богатый"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#жить_в"/>
+                <Variable IRI="/c"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Богатый"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Несметно_богатый"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Несметно_богатый</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Гражданин"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#работать_на"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Без_работы"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Жилые"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#достаток_жильцов"/>
+                <Variable IRI="/r"/>
+                <NamedIndividual IRI="#Несметно_богатый"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#жить_в"/>
+                <Variable IRI="/c"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Несметно_богатый"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Обеспеченный &gt; Богатый &gt; Несметно_богатый</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Гражданин"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#работать_на"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Без_работы"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Жилые"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#достаток_жильцов"/>
+                <Variable IRI="/r"/>
+                <NamedIndividual IRI="#Обеспеченный"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#жить_в"/>
+                <Variable IRI="/c"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Обеспеченный"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Богатый"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/c"/>
+                <NamedIndividual IRI="#Несметно_богатый"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Достаток-проживание</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Гражданин"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#жить_в"/>
+                <Variable IRI="/c"/>
+                <Variable IRI="/p"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head/>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Достаток рабочих</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Гражданин"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#работать_на"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/f"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Рабочие"/>
+                <Variable IRI="/f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#достаток_рабочих"/>
+                <Variable IRI="/f"/>
+                <Variable IRI="/w"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_достаток"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/w"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
