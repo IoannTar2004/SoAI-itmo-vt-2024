@@ -1,4 +1,4 @@
-:- consult('build_cost.pl').
+:- consult('build_price.pl').
 :- dynamic(law/2).
 
 % законы, изменяющие базу знаний (название, стоимость закона)

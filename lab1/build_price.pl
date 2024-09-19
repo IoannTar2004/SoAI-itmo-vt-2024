@@ -20,7 +20,7 @@ build_price(clothes, 18000).
 build_price(electronics, 25000).
 build_price(fabric, 10500).
 build_price(furniture, 10000).
-build_price(industry_leather, 4800)
+build_price(industry_leather, 4800).
 build_price(jewellery, 9500).
 build_price(juice, 12000).
 build_price(medicine, 28000).

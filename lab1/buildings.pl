@@ -32,7 +32,7 @@ mine(oil).      % нефть
 
 % заводы (продукция, материалы...)
 industry(planks, wood).     % доски из дерева
-industry(industry_leather, skin) % кожа из шкур
+industry(industry_leather, skin). % кожа из шкур
 industry(rum, sugar).       % ром из сахара
 industry(cans, fish_meat).       % консервы из рыбы или ананаса или мяса или какао
 industry(cans, pineapple).

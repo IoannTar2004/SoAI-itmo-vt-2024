@@ -1,5 +1,5 @@
 :- consult('goods.pl').
-:- consult('build_cost.pl').
+:- consult('build_price.pl').
 :- consult('job_properties.pl').
 
 % Факты о кол-ве товара, произведенного в один день одним работником

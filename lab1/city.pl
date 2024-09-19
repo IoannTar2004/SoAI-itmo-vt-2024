@@ -1,7 +1,8 @@
 :- consult('production.pl').
-:- consult('build_cost.pl').
+:- consult('build_price.pl').
 :- consult('electricity_usage.pl').
 :- consult('wealth_props.pl').
+:- consult('laws.pl').
 :- dynamic(build/3).
 
 % построить здание (здание, id, кол-во рабочих)
