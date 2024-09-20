@@ -44,7 +44,7 @@ prod_count(weapon, 0.7).
 prod_count(cheese, 0.75).
 prod_count(cigars, 0.55).
 prod_count(car, 0.8).
-prod_count(plantmass, 1).
+prod_count(plastmass, 1).
 prod_count(chocolate, 0.5).
 prod_count(medicine, 1).
 prod_count(juice, 0.84).

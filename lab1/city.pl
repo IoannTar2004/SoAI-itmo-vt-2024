@@ -6,14 +6,15 @@
 :- dynamic(build/3).
 
 % построить здание (здание, id, кол-во рабочих)
-new_build(Build, Id, Workers) :-
+new_building(Build, Id, Workers) :-
     Id >= 0, build_price(Build, _), \+ build(Build, Id, _),
     job(Build, _, _, N, _), Workers =< N,
     assert(build(Build, Id, Workers)).
 
 % разрушить здание (здание, id)
-destroy_build(Build, Id) :-
-    retractall(build(Build, Id, _)).
+destroy_building(Build, Id) :-
+    retractallводство товаров в день
+theory_pro(build(Build, Id, _)).
 
 % изменить кол-во рабочих в здании
 set_workers(Build, Id, Workers) :-
@@ -28,8 +29,7 @@ prod_per_day(Build, Count) :-
     Count is Prod * Sum.
 
 % делает то же, что и предыдущее правило, за исключением того, что данное правило теоретически рассчитывает
-% производство товаров в день
-theory_prod_per_day(Build, Workers, Count) :-
+% произd_per_day(Build, Workers, Count) :-
     (plantation(Build); farm(_, Build); mine(Build); industry(Build, _); industry(Build, _, _)),
     job(Build, _, _, _, _), !, prod_count(Build, Prod),
     Count is Prod * Workers.
@@ -58,7 +58,7 @@ suitable_house(People, Quality, Wealth, TotalPrice, TotalElectricity) :-
     TotalPrice is Price * Count, TotalElectricity is Electricity * Count.
 
 % выводит информацию о необходимом количестве производственных зданий, работников и жилых домов, 
-% в котором будут проживать работники. Количество производственных зданий и рабочих рассчитывается такое,
+% в которых будут проживать работники. Количество производственных зданий и рабочих рассчитывается такое,
 % чтобы доход от экспорта продукции этого здания был равен Purpose. Также учитывается минимальное качество
 % жилья для рабочих
 city_development(Purpose, LHouse) :-
@@ -74,4 +74,5 @@ city_development(Purpose, LHouse) :-
     suitable_house(Workers, LHouse, Wealth, HousesPrice, HousesElectricity),
     (\+build_electricity(Item, _) -> format('\nTotal Electricity: ~d\n', HousesElectricity);
     build_electricity(Item, Electricity) -> format('\nTotal Electricity: ~d\n', Electricity + HousesElectricity)),
-    format('Total Price: ~d\n', BuildCount * BuildPrice + HousesPrice).
+    format('Total Price: ~d\n', BuildCount * BuildPrice + HousesPrice),
+    write('-----------------------\n').

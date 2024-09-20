@@ -228,6 +228,7 @@ english_russian = {
     "coconut": "кокос",
     "coffee": "кофе",
     "corn": "кукуруза",
+    "cotton": "хлопок",
     "fist_meat": "рыба-товар",
     "gold": "золото",
     "skin": "шкуры",

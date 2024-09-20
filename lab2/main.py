@@ -7,7 +7,7 @@ def execute_prolog(request):
     req = RequestPattern()
     for fact in facts:
         func = req.get(fact)
-        func(fact) if func is not None else print("Не понял вашего запроса.")
+        func(fact.lower()) if func is not None else print("Не понял вашего запроса.")
 
 
 if __name__ == '__main__':
