@@ -34,8 +34,8 @@ job(weapon, well-off, uneducated, 8, 60).
 
 % электричество
 job(coal, well-off, school, 6, 60).      
-job(oil, 12000, well-off, school, 6, 60).      
-job(sun, 18000, well-off, school, 3, 65). 
+job(oil, well-off, school, 6, 60).      
+job(sun, well-off, school, 3, 65). 
 job(uranium, super_rich, college, 4, 80).
 
 % развлечения
@@ -44,7 +44,7 @@ job(circus, poor, uneducated, 6, 45).
 job(funfair_pier, poor, uneducated, 6, 45).
 job(restaurant, poor, uneducated, 4, 45).
 job(amusement_park, poor, uneducated, 6, 50).
-job(stadium, poor, uneducated, 50).
+job(stadium, poor, uneducated, 4, 50).
 
 % роскошные развлечения
 job(theater, well-off, school, 6, 50).

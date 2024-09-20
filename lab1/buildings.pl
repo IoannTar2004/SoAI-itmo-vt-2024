@@ -1,5 +1,7 @@
 :- consult('goods.pl').
 
+% основное информация про каждое здание
+
 % земельные ресурсы: плантации, лесозаготовки
 plantation(corn).       % кукуруза
 plantation(banana).     % банан
@@ -11,8 +13,8 @@ plantation(cacao).      % какао
 plantation(sugar).      % сахар
 plantation(rubber).     % каучук
 
-lumberjack_camp(wood).      % древесина
-coconut_combine(coconut).   % кокос
+wood(wood).      % древесина
+coconut(coconut).   % кокос
 
 % фермы
 farm(bull, skin). farm(bull, meat).     % бык - шкуры, мясо
@@ -38,7 +40,6 @@ industry(cans, fish_meat).       % консервы из рыбы или ана�
 industry(cans, pineapple).
 industry(cans, meat).
 industry(cans, cacao).
-industry(steel, iron, coal).% сталь из железа и угля
 industry(boat, planks).     % лодки из досок или стали или алюминия
 industry(boat, steel).      
 industry(boat, aluminum).
@@ -46,26 +47,27 @@ industry(boat, aluminum).
 industry(fabric, cotton).   % ткань из хлопка или шерсти
 industry(fabric, wool).
 
-industry(weapon, steel, nickel). % оружие из стали и никеля
 industry(cheese, milk).     % сыр из молока
 industry(cigars, tobacco).    % сигары из табака
 industry(plastmass, oil).       % пластмассы из нефти
 industry(furniture, planks).    % мебель из досок или пластмасс
 industry(furniture, plastmass).
 
-industry(car, steel, rubber).   % автомобили из стали и каучука
-industry(chocolate, cacao, sugar).   % шоколад из какао и сахара
-
 industry(jewellery, gold).  % украшения из золота
 industry(medicine, oil).    % лекарства из нефти
 industry(juice, banana).    % сок из бананов или ананасов или кокосов
 industry(juice, pineapple).
 industry(juice, coconut).
-industry(electronics, plastmass, gold). % электроника из пластмасс и золота
 
 industry(clothes, fabric).  % одежда из ткани или кожи
 industry(clothes, natural_leather).
 industry(clothes, industry_leather).
+
+industry(steel, iron, coal).% сталь из железа и угля
+industry(weapon, steel, nickel). % оружие из стали и никеля
+industry(electronics, plastmass, gold). % электроника из пластмасс и золота
+industry(car, steel, rubber).   % автомобили из стали и каучука
+industry(chocolate, cacao, sugar).   % шоколад из какао и сахара
 
 % электростанции (МВт, потребляемый ресурс)
 electricity(coal).      % ТЭС на угле

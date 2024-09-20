@@ -1,18 +1,19 @@
 from request_pattern import RequestPattern
-from pyswip import Prolog
 import re
-import os
-
 
 
 def execute_prolog(request):
     facts = re.split('\\s*\\.\\s*', request)
     req = RequestPattern()
     for fact in facts:
-        req.get(fact)
+        func = req.get(fact)
+        func(fact) if func is not None else print("Не понял вашего запроса.")
 
 
 if __name__ == '__main__':
-    # execute_prolog('Что может выращивать плантация')
-    p = Prolog()
-    # p.consult('a.pl')
+    print("Что вы хотите узнать?")
+    while True:
+        request = input()
+        if request == "halt":
+            break
+        execute_prolog(request)

@@ -52,6 +52,7 @@ prod_count(jewellery, 0.5).
 prod_count(electronics, 0.8).
 prod_count(clothes, 0.9).
 
+% сколько вырабатывает МВт каждый работник
 electricity_prod(coal, 60).      % ТЭС на угле
 electricity_prod(oil, 66).       % ТЭС на нефти
 electricity_prod(sun, 166).       % Солнечная ЭС

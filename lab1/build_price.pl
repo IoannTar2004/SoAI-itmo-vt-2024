@@ -1,7 +1,7 @@
 :- consult('buildings.pl').
 :- dynamic(build_price/2).
 
-% цена за каждое здание
+% цена каждого здания
 % ресурсы
 build_price(plantation, 1500).
 build_price(wood, 750).
@@ -29,12 +29,6 @@ build_price(planks, 4700).
 build_price(rum, 9600).
 build_price(steel, 9500).
 build_price(weapon, 18000).
-
-% электричество
-electricity(coal, 12000).      
-electricity(oil, 12000).      
-electricity(sun, 18000). 
-electricity(uranium, 32000).
 
 % жилые
 build_price(conventillo, 4850).
@@ -92,3 +86,9 @@ build_price(barracks, 6000).
 build_price(armybase, 20000).
 build_price(aircraft_carrier, 35000).
 build_price(drons, 12000).
+
+% электричество
+electricity_price(coal, 12000).      
+electricity_price(oil, 12000).      
+electricity_price(sun, 18000). 
+electricity_price(uranium, 32000).

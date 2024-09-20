@@ -7,7 +7,8 @@ wealth(well-off).     % обеспеченный
 wealth(rich).         % богатый
 wealth(super_rich).   % несметно богатый
 
-% здания в зависимости от достатка граждан
+% здания, в которые могут прийти или жить граждане в зависимости от достатка
+
 % жилые
 build_wealth(shack, broke).
 build_wealth(conventillo, poor).
