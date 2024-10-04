@@ -13,8 +13,7 @@ new_building(Build, Id, Workers) :-
 
 % разрушить здание (здание, id)
 destroy_building(Build, Id) :-
-    retractallводство товаров в день
-theory_pro(build(Build, Id, _)).
+    retractall(build(Build, Id, _)).
 
 % изменить кол-во рабочих в здании
 set_workers(Build, Id, Workers) :-
@@ -29,7 +28,7 @@ prod_per_day(Build, Count) :-
     Count is Prod * Sum.
 
 % делает то же, что и предыдущее правило, за исключением того, что данное правило теоретически рассчитывает
-% произd_per_day(Build, Workers, Count) :-
+prod_per_day_theory(Build, Workers, Count) :-
     (plantation(Build); farm(_, Build); mine(Build); industry(Build, _); industry(Build, _, _)),
     job(Build, _, _, _, _), !, prod_count(Build, Prod),
     Count is Prod * Workers.
