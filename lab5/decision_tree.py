@@ -1,5 +1,6 @@
 import math
 
+import numpy as np
 from pandas import DataFrame
 
 from utils.Stat import Stat
@@ -28,6 +29,15 @@ def write_node(node: Node, location: str):
         edge = node.edges[j]
         if not edge.is_leaf:
             write_node(edge, location + f"/{j}({edge.feature})")
+
+
+def find_path(node: Node, features: dict):
+    edge = features.get(node.feature)
+    if edge is not None and node.edges.get(edge) is not None:
+        return find_path(node.edges[edge], features)
+    if node.is_leaf:
+        return node.feature
+    return "Y" if node.stat["Y"] >= node.stat["N"] else "N"
 
 
 class DecisionTree(Stat):
@@ -110,4 +120,52 @@ class DecisionTree(Stat):
     def print_tree(self):
         write_node(self.node, self.node.feature)
 
-    # def get_class(self, features: dict, true: str, false: str):
+    def get_class(self, features: dict, true: str, false: str):
+        result = find_path(self.node, features)
+        return true if result == "Y" else false
+
+    def class_estimation(self, df_test: DataFrame):
+        estimations = {"TP": 0, "FN": 0, "TN": 0, "FP": 0}
+        for i, row in df_test.iterrows():
+            real = "Y" if row[self.target] >= self.threshold else "N"
+            test = self.get_class(row.to_dict(), "Y", "N")
+
+            if real == "Y":
+                if test == "Y":
+                    estimations["TP"] += 1
+                else:
+                    estimations["FN"] += 1
+            else:
+                if test == "N":
+                    estimations["TN"] += 1
+                else:
+                    estimations["FP"] += 1
+        return estimations
+
+    def draw_curve(self, name, x, y, xlabel, ylabel):
+        x_points = np.array([0, x, 1])
+        y_points = np.array([0, y, 0])
+
+        coefficients = np.polyfit(x_points, y_points, 2)
+        polynomial = np.poly1d(coefficients)
+
+        x_dense = np.linspace(x_points.min(), x_points.max(), 100)
+        y_dense = polynomial(x_dense)
+
+        self.plt.plot(x_dense, y_dense, color="blue")
+        self.plt.scatter(x_points, y_points, color="red")
+        self.plt.fill_between(x_dense, y_dense, color="lightblue", alpha=0.4)
+        self.plt.xlabel(xlabel)
+        self.plt.ylabel(ylabel)
+        self.plt.title(name)
+        self.plt.show()
+
+        return np.trapezoid(y_dense, x_dense)
+
+    def draw_roc(self, fpr, tpr):
+        return self.draw_curve("AUC-ROC", fpr, tpr, "FPR", "TPR")
+
+    def draw_pr(self, precision, recall):
+        return self.draw_curve("AUC-PR", precision, recall, "Precision", "Recall")
+
+
