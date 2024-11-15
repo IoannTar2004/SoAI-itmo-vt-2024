@@ -1,30 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from utils.Stat import Stat
 
 
-class Stat:
+class Linear(Stat):
 
     def __init__(self, plt, df):
-        self.plt = plt
-        self.df = df
-
-    def getSelection(self, key):
-        count = self.df[key].value_counts()
-        return count.index, count.values
+        super().__init__(plt, df)
 
     def print_stat(self, key):
         feature = self.df[key]
         print('Количество: ', feature.count)
-
-    def draw_bar(self, key: str, labels: tuple, position):
-        self.plt.subplot(position[0], position[1], position[2])
-        self.plt.title(key)
-        i, v = self.getSelection(key)
-        self.plt.xlabel(labels[0])
-        self.plt.ylabel(labels[1])
-        self.plt.bar(i, v)
-
-        print(self.df[key].describe(), '\n')
 
     def approximate(self, x_features: list, y_feature: str, frac):
         print('Независимые признаки: ', x_features)

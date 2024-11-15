@@ -10,10 +10,11 @@ def execute_prolog(request):
         func(fact.lower()) if func is not None else print("Не понял вашего запроса.")
 
 
-if __name__ == '__main__':
+def start():
     print("Что вы хотите узнать?")
     while True:
         request = input()
         if request == "halt":
             break
         execute_prolog(request)
+
