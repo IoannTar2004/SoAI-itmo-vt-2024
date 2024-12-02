@@ -6,9 +6,10 @@ from biometry.spectrum import Spectrum
 
 
 def execute():
-    df = pd.read_csv("D:\\Универ\\3 курс\\системы искусственного интеллекта\\biometry\\VSR_Rubej.csv", sep=';')
+    df = pd.read_csv("D:\\Универ\\3 курс\\системы искусственного интеллекта\\biometry\\VSR.csv", sep=';')
     plt.figure(figsize=(12, 6))
     spectrum = Spectrum(plt, df)
+    spectrum.draw_cardiointervalogram()
     x, y = spectrum.cubic_interpolate()
     y = spectrum.smooth_with_window(signal.windows.hann, x, y)
     frequencies, fft_values = spectrum.fft(y)
@@ -23,5 +24,7 @@ def execute():
     print("LF:", lf)
     print("VLF:", vlf, "\n")
 
-    print("ИВВ:", vvi)
+    print("ИЦ: ", spectrum.indexes(hf, lf, vlf, "ИЦ"))
+    print("ИВВ:", spectrum.indexes(hf, lf, vlf, "ИВВ"))
+    print("ИАП:", spectrum.indexes(hf, lf, vlf, "ИАП"))
     print("Тип регуляции вегетативной системы:", spectrum.regulation_type(vvi))

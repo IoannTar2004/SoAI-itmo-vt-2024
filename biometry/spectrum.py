@@ -19,25 +19,6 @@ class Spectrum:
         self.plt.xlabel(xlabel)
         self.plt.ylabel(ylabel)
 
-    def autocorrelogram(self, m):
-        autocorr_values = acf(self.intervals, nlags=127)
-        x = np.arange(0, 32, 0.25)
-        self.plt.plot(x, autocorr_values, color='black')
-        self.pyplot_setup("с", "r")
-        self.plt.show()
-
-    def scatterogram(self):
-        low, high = -0.5, 3
-        autocorr_values = acf(self.intervals, nlags=127)
-        x = autocorr_values[:-1]
-        y = autocorr_values[1:]
-        self.plt.scatter(x, y, color='blue', s=10)
-        self.plt.xlim(low, high)
-        self.plt.ylim(low, high)
-        self.plt.plot([low, high], [low, high], color='orange', linestyle='-')
-        self.pyplot_setup("с", "с")
-        self.plt.show()
-
     def draw_rhythmogram(self):
         x = np.arange(0, 300, 1)
         self.plt.plot(x, self.intervals, marker='o', color='black')
@@ -57,8 +38,8 @@ class Spectrum:
         y_new = spline(x_new)
 
         self.pyplot_setup("Длительность измерений, с", "Кардиоинтервалы, мс")
-        # self.plt.plot(x_new, y_new)
-        # self.plt.show()
+        self.plt.plot(x_new, y_new)
+        self.plt.show()
 
         return x_new, y_new
 
@@ -68,8 +49,9 @@ class Spectrum:
         y_smoothed = y * window
 
         self.pyplot_setup("Длительность измерений, с", "Кардиоинтервалы, мс")
-        # self.plt.plot(x, y_smoothed, color="red")
-        # self.plt.show()
+        self.plt.plot(x, y, color="blue")
+        self.plt.plot(x, y_smoothed, color="red")
+        self.plt.show()
 
         return y_smoothed
 
@@ -86,7 +68,7 @@ class Spectrum:
         vlf, lf, hf = [], [], []
         x1, x2, x3 = [], [], []
 
-        for i in range(5, N // 8):
+        for i in range(4, N // 8):
             if 0.015 <= frequencies[i] <= 0.04:
                 x1.append(frequencies[i])
                 vlf.append(powers[i])

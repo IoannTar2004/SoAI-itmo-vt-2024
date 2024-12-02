@@ -42,6 +42,8 @@ class Linear(Stat):
 
         if len(ratios) == 2:
             self.plt.subplot()
+            self.plt.xlabel(x_features[0])
+            self.plt.ylabel(y_feature)
             for i in range(100):
                 self.plt.scatter(self.df[x_features[0]][i], y[i])
             x = np.array([self.df[x_features].values.min(), self.df[x_features].values.max()])

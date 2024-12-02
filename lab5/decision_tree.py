@@ -143,8 +143,8 @@ class DecisionTree(Stat):
         return estimations
 
     def draw_curve(self, name, x, y, xlabel, ylabel):
-        x_points = np.array([0, x, 1])
-        y_points = np.array([0, y, 0])
+        x_points = np.array([1, x, 0])
+        y_points = np.array([0, y, 1])
 
         coefficients = np.polyfit(x_points, y_points, 2)
         polynomial = np.poly1d(coefficients)
